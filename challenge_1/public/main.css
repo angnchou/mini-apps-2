@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+}
+
+.data {
+  margin: 8px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+}
+
+.detail {
+  margin: 8px;
+}
+
+.list {
+  margin: 16px;
+  padding: 16px;
+}
+
+ul {
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+li {
+  border: 1px solid grey;
+  margin: 4px;
+  padding: 4px;
+  display: inline-block;
+}
