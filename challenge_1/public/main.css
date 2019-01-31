@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+}
+
+.data {
+  margin: 8px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+}
+
+.detail {
+  margin: 8px;
+}
+
+.list {
+  margin: 16px;
+  padding: 16px;
+}
+
+.pageButtons {
+  display: float;
+}
