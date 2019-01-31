@@ -13,6 +13,7 @@ class App extends React.Component {
       data: [],
       input: '',
       total: 0,
+      offset: 10,
     };
     this.handleInput = this.handleInput.bind(this);
     this.handleSearch = this.handleSearch.bind(this);
@@ -30,7 +31,7 @@ class App extends React.Component {
   fetchSearchPage(pageNumber) {
     axios
       .get('/events', {
-        params: { q: this.state.input, _limit: 10, _page: pageNumber },
+        params: { q: this.state.input, _limit: 10, _page: pageNumber + 1 },
       })
       .then(result => {
         const total = parseInt(result.headers['x-total-count']);
@@ -44,7 +45,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h3>Historical Events</h3>
+        <h2>Enter a keyword to find historical events!</h2>
 
         <div className="pageButtons">
           <ReactPaginate
@@ -64,6 +65,7 @@ class App extends React.Component {
             activeClassName={'active'}
           />
         </div>
+
         <Search
           handleSearch={this.handleSearch}
           handleInput={this.handleInput}

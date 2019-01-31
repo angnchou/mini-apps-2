@@ -18,6 +18,15 @@ body {
   padding: 16px;
 }
 
-.pageButtons {
-  display: float;
+ul {
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+li {
+  border: 1px solid grey;
+  margin: 4px;
+  padding: 4px;
+  display: inline-block;
 }
