@@ -39,7 +39,10 @@ class App extends React.Component {
           data: result.data,
           total: total,
         });
-      });
+      })
+      .catch(err => {
+        console.log(err, "Error fetching data!")
+      })
   }
 
   render() {
