@@ -12,12 +12,12 @@ class App extends React.Component {
 
   componentDidMount() {
     axios
-      .get('https://api.coindesk.com/v1/bpi/historical/close.json', {
+      .get('bitcoin', {
         params: { currency: 'BTC' },
       })
       .then(result => {
         this.setState({
-          data: result.data.bpi,
+          data: result.data,
         });
       })
       .catch(err => {
