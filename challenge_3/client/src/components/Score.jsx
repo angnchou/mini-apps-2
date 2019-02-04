@@ -4,7 +4,8 @@ const Score = props => {
   return (
     <div>
       <div>
-        Frame: {props.frame}, Ball: {props.ball}
+        Frame: {props.frame}, Ball: {props.ball} Score: {props.score}
+        {props.gameOver ? 'Game Over!' : null}
       </div>
     </div>
   );

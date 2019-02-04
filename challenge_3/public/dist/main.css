@@ -2,3 +2,6 @@ td,
 table {
   padding: 16px;
 }
+.score {
+  border: 1px solid black;
+}
