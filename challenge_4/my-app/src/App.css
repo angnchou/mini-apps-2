@@ -1,0 +1,22 @@
+.box,
+.flat,
+.mine {
+  width: 30px;
+  height: 30px;
+  margin: 1px;
+}
+.box {
+  background-color: grey;
+  cursor: pointer;
+}
+.box:hover {
+  background-color: lightgrey;
+}
+
+.flat {
+  background-color: lightgrey;
+}
+
+.mine {
+  background-color: red;
+}
