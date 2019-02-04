@@ -22,7 +22,9 @@ const Input = props => {
                     {num}
                   </td>
                 ) : (
-                  <td style={notSelectable}>{num}</td>
+                  <td style={notSelectable} key={num}>
+                    {num}
+                  </td>
                 ),
               )}
             </tr>
